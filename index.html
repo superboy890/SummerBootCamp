@@ -17,41 +17,39 @@
     <h1>Tre Seamans</h1>
     <ul>
       <li>
-        <a href="./index.html">
-          Home
-        </a>
+        <a href="./index.html">Home</a>
       </li>
       <li>
-        <a href="./pages/about.html">
-          ABOUT ME
-        </a>
+        <a href="./pages/about.html">ABOUT ME</a>
       </li>
     </ul>
   </header>
 
   <main>
 
-    <!--Add a picture to your website here.-->
+    <!-- Add a picture to your website here -->
     <img src="https://t3.ftcdn.net/jpg/07/35/44/76/360_F_735447660_Mb1mTmfff8EhrRuornYjGkE9JlGUk4lP.jpg" alt="homepagesmoothie" id="me" style="height:20%; width:100%; object-fit: cover;">
 
     <div class="content">
-      <!--This is content card 1-->
+      <!-- This is content card 1 -->
       <div class="card">
         <h1>JavaScript Counter</h1>
-      <p>Push the buttons below to add to or remove from the count.
-      </p>
+        <p>Push the buttons below to add to or remove from the count.</p>
+        <div id="counter">
+          <button id="decrement">Decrement</button>
+          <span id="count">0</span>
+          <button id="increment">Increment</button>
+        </div>
       </div>
-      <!--This is content card 2-->
-      <div class="card">
-      </div>
-      <!--This is content card 3-->
-      <div class="card">
-      </div>
+      <!-- This is content card 2 -->
+      <div class="card"></div>
+      <!-- This is content card 3 -->
+      <div class="card"></div>
     </div>
   </main>
 
   <footer>
-    <!--Add a link to your GitHub here-->
+    <!-- Add a link to your GitHub here -->
     <div class="gitHub">
       <b>GitHub</b>
       <p>
@@ -62,9 +60,6 @@
       <p>My Social Media</p>
       <br>
       <a href="https://www.youtube.com/@RetroCircuitry" target="_blank"><img src="https://s.ytimg.com/yts/img/favicon_48-vfl1s0rGh.png" alt="YouTube"></a>
-    <!--  <a href="https://www.instagram.com/" target="_blank"><img src="./images/icons8-instagram-48.png"
-          alt="instagram"></a>
-      <a href="https://twitter.com/" target="_blank"><img src="./images/icons8-twitter-48.png" alt="twitter"></a>-->
     </div>
     <div class="contact">
       <b>Contact Me</b>
@@ -72,6 +67,34 @@
       <p>Phone: Same for my number</p>
     </div>
   </footer>
+
+  <!-- JavaScript to handle the counter functionality -->
+  <script>
+    // Get the elements by their IDs
+    const countElement = document.getElementById("count");
+    const decrementButton = document.getElementById("decrement");
+    const incrementButton = document.getElementById("increment");
+
+    // Initialize the counter value
+    let counter = 0;
+
+    // Function to update the count on the page
+    function updateCount() {
+      countElement.textContent = counter;
+    }
+
+    // Event listener for increment button
+    incrementButton.addEventListener("click", () => {
+      counter++;
+      updateCount();
+    });
+
+    // Event listener for decrement button
+    decrementButton.addEventListener("click", () => {
+      counter--;
+      updateCount();
+    });
+  </script>
 </body>
 
 </html>
