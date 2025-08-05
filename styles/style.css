@@ -86,16 +86,23 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
-add-family {
-            width: 45%;
-            background-color: blue;
-            cursor: pointer;
+addfamilybutton {
+    width: 45%;
+    background-color: blue;
+    color: white;
+    padding: 12px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
         }
 button:active {
     transform: scale(0.95);
     background-color: #0000c2;
 }
-
+addfamilybutton:active {
+    transform: scale(0.95);
+    background-color: #0000c2;
+}
 footer {
     background-color: gray;
     color: white;
