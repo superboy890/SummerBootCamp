@@ -78,7 +78,7 @@ header li :hover {
 }
 
 button {
-    width: 35%;
+    width: fit-content+30px;
     background-color: blue;
     color: white;
     padding: 12px 0;
@@ -87,7 +87,7 @@ button {
     cursor: pointer;
 }
 button:active {
-    transform: scale(0.9);
+    transform: scale(0.95);
     background-color: #0000c2;
 }
 footer {
