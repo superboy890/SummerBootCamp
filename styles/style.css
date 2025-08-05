@@ -78,15 +78,18 @@ header li :hover {
 }
 
 button {
-    width: 50%;
-    background-color: gray;
+    width: 35%;
+    background-color: blue;
     color: white;
     padding: 12px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
-
+button:active {
+    transform: scale(0.9);
+    background-color: #0000c2;
+}
 footer {
     background-color: gray;
     color: white;
