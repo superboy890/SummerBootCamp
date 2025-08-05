@@ -41,6 +41,8 @@
           <br>
           <button id="increment" >Increase</button> 
           <button id="decrement">Decrease</button>
+          <button id="times2">Times 2</button> <!-- Added Times 2 button -->
+
         </div>
       </div>
 
@@ -84,11 +86,12 @@
   </footer>
 
   <!-- JavaScript to handle the counter functionality and family member list -->
-  <script>
+    <script>
     // JavaScript for counter functionality
     const countElement = document.getElementById("count");
     const decrementButton = document.getElementById("decrement");
     const incrementButton = document.getElementById("increment");
+    const times2Button = document.getElementById("times2"); // Times 2 button
 
     let counter = 0;
 
@@ -106,12 +109,17 @@
       updateCount();
     });
 
+    // Times 2 functionality
+    times2Button.addEventListener("click", () => {
+      counter *= 2;
+      updateCount();
+    });
+
     // JavaScript for family member list
     const familyList = document.getElementById("family-list");
     const familyNameInput = document.getElementById("family-name");
     const addFamilyButton = document.getElementById("add-family");
 
-    // Event listener to add a new family member
     addFamilyButton.addEventListener("click", () => {
       const familyName = familyNameInput.value.trim();
 
