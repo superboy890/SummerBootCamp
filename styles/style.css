@@ -78,7 +78,7 @@ header li :hover {
 }
 
 button {
-    width: fit-content+30px;
+    width: 35%;
     background-color: blue;
     color: white;
     padding: 12px 0;
@@ -90,6 +90,7 @@ button:active {
     transform: scale(0.95);
     background-color: #0000c2;
 }
+
 footer {
     background-color: gray;
     color: white;
