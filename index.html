@@ -31,25 +31,37 @@
     <img src="https://t3.ftcdn.net/jpg/07/35/44/76/360_F_735447660_Mb1mTmfff8EhrRuornYjGkE9JlGUk4lP.jpg" alt="homepagesmoothie" id="me" style="height:20%; width:100%; object-fit: cover;">
 
     <div class="content">
-      <!-- This is content card 1 -->
+      <!-- This is content card 1 (JavaScript Counter) -->
       <div class="card">
         <h1>JavaScript Counter</h1>
         <p>Push the buttons below to add to or remove from the count.</p>
         <div id="counter">
+          <button id="decrement">Decrement</button>
           <span id="count">0</span>
-          <button id="decrement">Decrease</button>
-          <button id="increment">Increase</button>
+          <button id="increment">Increment</button>
         </div>
       </div>
-      <!-- This is content card 2 -->
-      <div class="card"></div>
+
+      <!-- This is content card 2 (Family Members List) -->
+      <div class="card">
+        <h1>My Family Members</h1>
+        <p>Here is a list of my family members:</p>
+        <ul id="family-list">
+          <!-- Family members will be listed here -->
+          <li>John (Father)</li>
+          <li>Jane (Mother)</li>
+          <li>Tom (Brother)</li>
+        </ul>
+        <input type="text" id="family-name" placeholder="Add family member" />
+        <button id="add-family">Add Family Member</button>
+      </div>
+
       <!-- This is content card 3 -->
       <div class="card"></div>
     </div>
   </main>
 
   <footer>
-    <!-- Add a link to your GitHub here -->
     <div class="gitHub">
       <b>GitHub</b>
       <p>
@@ -68,31 +80,46 @@
     </div>
   </footer>
 
-  <!-- JavaScript to handle the counter functionality -->
+  <!-- JavaScript to handle the counter functionality and family member list -->
   <script>
-    // Get the elements by their IDs
+    // JavaScript for counter functionality
     const countElement = document.getElementById("count");
     const decrementButton = document.getElementById("decrement");
     const incrementButton = document.getElementById("increment");
 
-    // Initialize the counter value
     let counter = 0;
 
-    // Function to update the count on the page
     function updateCount() {
       countElement.textContent = counter;
     }
 
-    // Event listener for increment button
     incrementButton.addEventListener("click", () => {
       counter++;
       updateCount();
     });
 
-    // Event listener for decrement button
     decrementButton.addEventListener("click", () => {
       counter--;
       updateCount();
+    });
+
+    // JavaScript for family member list
+    const familyList = document.getElementById("family-list");
+    const familyNameInput = document.getElementById("family-name");
+    const addFamilyButton = document.getElementById("add-family");
+
+    // Event listener to add a new family member
+    addFamilyButton.addEventListener("click", () => {
+      const familyName = familyNameInput.value.trim();
+
+      if (familyName !== "") {
+        const newFamilyMember = document.createElement("li");
+        newFamilyMember.textContent = familyName;
+        familyList.appendChild(newFamilyMember);
+        familyNameInput.value = ""; // Clear input field
+      } else {
+        alert("Please enter a family member's name.");
+      }
     });
   </script>
 </body>
