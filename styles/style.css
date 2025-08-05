@@ -90,7 +90,7 @@ button:active {
     transform: scale(0.95);
     background-color: #0000c2;
 }
-addfamilybutton {
+.addfamilybutton {
     width: 500px;
     background-color: blue;
     color: white;
@@ -100,7 +100,7 @@ addfamilybutton {
     cursor: pointer;
         }
 
-addfamilybutton:active {
+.addfamilybutton:active {
     transform: scale(0.95);
     background-color: #0000c2;
 }
