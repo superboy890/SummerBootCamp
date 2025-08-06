@@ -1,138 +1,151 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Landing page for Tre Seamans Fun Site" />
+    <title>A site</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Landing page for Tre Seamans Fun Site">
-  <title>A site</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="./styles/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-  
-</head>
+  <body>
+    <header>
+      <h1>Tre Seamans</h1>
+      <ul>
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
+          <a href="./pages/about.html">ABOUT ME</a>
+        </li>
+      </ul>
+    </header>
 
-<body>
-  <header>
-    <h1>Tre Seamans</h1>
-    <ul>
-      <li>
-        <a href="./index.html">Home</a>
-      </li>
-      <li>
-        <a href="./pages/about.html">ABOUT ME</a>
-      </li>
-    </ul>
-  </header>
+    <main>
+      <!-- Add a picture to your website here -->
+      <img
+        src="https://t3.ftcdn.net/jpg/07/35/44/76/360_F_735447660_Mb1mTmfff8EhrRuornYjGkE9JlGUk4lP.jpg"
+        alt="homepagesmoothie"
+        id="me"
+        style="height: 20%; width: 100%; object-fit: cover"
+      />
 
-  <main>
-
-    <!-- Add a picture to your website here -->
-    <img src="https://t3.ftcdn.net/jpg/07/35/44/76/360_F_735447660_Mb1mTmfff8EhrRuornYjGkE9JlGUk4lP.jpg" alt="homepagesmoothie" id="me" style="height:20%; width:100%; object-fit: cover;">
-
-    <div class="content">
-      <!-- This is content card 1 (JavaScript Counter) -->
-      <div class="card">
-        <h1>JavaScript Counter</h1>
-        <p>Push the buttons below to add to or remove from the count.</p>
-        <div id="counter">
-          <span id="count">0</span>
-          <br>
-          <button id="increment" >Increase</button> 
-          <button id="decrement">Decrease</button>
-          <button id="times2">Times 2</button> <!-- Added Times 2 button -->
-
+      <div class="content">
+        <!-- This is content card 1 (JavaScript Counter) -->
+        <div class="card">
+          <h1>JavaScript Counter</h1>
+          <p>Push the buttons below to add to or remove from the count.</p>
+          <div id="counter">
+            <span id="count">0</span>
+            <br />
+            <button id="increment">Increase</button>
+            <button id="decrement">Decrease</button>
+            <button id="times2">Times 2</button>
+            <!-- Added Times 2 button -->
+          </div>
         </div>
+
+        <!-- This is content card 2 (Family Members List) -->
+        <div class="card">
+          <h1>My Family Members</h1>
+          <p>Here is a list of my family members:</p>
+          <ul id="family-list">
+            <!-- Family members will be listed here -->
+            <li>John (Father)</li>
+            <li>Jane (Mother)</li>
+            <li>Tom (Brother)</li>
+          </ul>
+          <input type="text" id="family-name" placeholder="Add family member" />
+          <br />
+          <button class="addfamilybutton" id="add-family">
+            Add Family Member
+          </button>
+        </div>
+
+        <!-- This is content card 3 -->
+        <div class="card"></div>
       </div>
+    </main>
 
-      <!-- This is content card 2 (Family Members List) -->
-      <div class="card">
-        <h1>My Family Members</h1>
-        <p>Here is a list of my family members:</p>
-        <ul id="family-list">
-          <!-- Family members will be listed here -->
-          <li>John (Father)</li>
-          <li>Jane (Mother)</li>
-          <li>Tom (Brother)</li>
-        </ul>
-        <input type="text" id="family-name" placeholder="Add family member" />
-        <br>
-        <button class ="addfamilybutton" id="add-family">Add Family Member</button>
+    <footer>
+      <div class="gitHub">
+        <b>GitHub</b>
+        <p>
+          <a href="">My GitHub</a>
+        </p>
       </div>
+      <div class="my_information">
+        <p>My Social Media</p>
+        <br />
+        <a href="https://www.youtube.com/@RetroCircuitry" target="_blank"
+          ><img
+            src="https://s.ytimg.com/yts/img/favicon_48-vfl1s0rGh.png"
+            alt="YouTube"
+        /></a>
+      </div>
+      <div class="contact">
+        <b>Contact Me</b>
+        <p>Email: My email is none of your business</p>
+        <p>Phone: Same for my number</p>
+      </div>
+    </footer>
 
-      <!-- This is content card 3 -->
-      <div class="card"></div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="gitHub">
-      <b>GitHub</b>
-      <p>
-        <a href="">My GitHub</a>
-      </p>
-    </div>
-    <div class="my_information">
-      <p>My Social Media</p>
-      <br>
-      <a href="https://www.youtube.com/@RetroCircuitry" target="_blank"><img src="https://s.ytimg.com/yts/img/favicon_48-vfl1s0rGh.png" alt="YouTube"></a>
-    </div>
-    <div class="contact">
-      <b>Contact Me</b>
-      <p>Email: My email is none of your business</p>
-      <p>Phone: Same for my number</p>
-    </div>
-  </footer>
-
-  <!-- JavaScript to handle the counter functionality and family member list -->
+    <!-- JavaScript to handle the counter functionality and family member list -->
     <script>
-    // JavaScript for counter functionality
-    const countElement = document.getElementById("count");
-    const decrementButton = document.getElementById("decrement");
-    const incrementButton = document.getElementById("increment");
-    const times2Button = document.getElementById("times2"); // Times 2 button
+      // JavaScript for counter functionality
+      const countElement = document.getElementById("count");
+      const decrementButton = document.getElementById("decrement");
+      const incrementButton = document.getElementById("increment");
+      const times2Button = document.getElementById("times2"); // Times 2 button
 
-    let counter = 0;
+      let counter = 0;
 
-    function updateCount() {
-      countElement.textContent = counter;
-    }
-
-    incrementButton.addEventListener("click", () => {
-      counter++;
-      updateCount();
-    });
-
-    decrementButton.addEventListener("click", () => {
-      counter--;
-      updateCount();
-    });
-
-    // Times 2 functionality
-    times2Button.addEventListener("click", () => {
-      counter *= 2;
-      updateCount();
-    });
-
-    // JavaScript for family member list
-    const familyList = document.getElementById("family-list");
-    const familyNameInput = document.getElementById("family-name");
-    const addFamilyButton = document.getElementById("add-family");
-
-    addFamilyButton.addEventListener("click", () => {
-      const familyName = familyNameInput.value.trim();
-
-      if (familyName !== "") {
-        const newFamilyMember = document.createElement("li");
-        newFamilyMember.textContent = familyName;
-        familyList.appendChild(newFamilyMember);
-        familyNameInput.value = ""; // Clear input field
-      } else {
-        alert("Please enter a family member's name.");
+      function updateCount() {
+        countElement.textContent = counter;
       }
-    });
-  </script>
-</body>
 
+      incrementButton.addEventListener("click", () => {
+        counter++;
+        updateCount();
+      });
+
+      decrementButton.addEventListener("click", () => {
+        counter--;
+        updateCount();
+      });
+
+      // Times 2 functionality
+      times2Button.addEventListener("click", () => {
+        counter *= 2;
+        updateCount();
+      });
+
+      // JavaScript for family member list
+      const familyList = document.getElementById("family-list");
+      const familyNameInput = document.getElementById("family-name");
+      const addFamilyButton = document.getElementById("add-family");
+
+      addFamilyButton.addEventListener("click", () => {
+        const familyName = familyNameInput.value.trim();
+
+        if (familyName !== "") {
+          const newFamilyMember = document.createElement("li");
+          newFamilyMember.textContent = familyName;
+          familyList.appendChild(newFamilyMember);
+          familyNameInput.value = ""; // Clear input field
+        } else {
+          alert("Please enter a family member's name.");
+        }
+      });
+    </script>
+  </body>
 </html>
