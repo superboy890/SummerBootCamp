@@ -1,0 +1,47 @@
+modules = ["web", "nodejs-20"]
+run = "npx http-server . -p 8000"
+
+[nix]
+channel = "stable-25_05"
+packages = ["vite"]
+
+[workflows]
+
+[[workflows.workflow]]
+name = "Serve website"
+mode = "sequential"
+author = 24000125
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npx http-server . -p 8000"
+
+[[workflows.workflow]]
+name = "?"
+mode = "sequential"
+author = 24000125
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd ~/workspace/hl/webXash"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm run dev"
+
+[[ports]]
+localPort = 4173
+externalPort = 3001
+exposeLocalhost = true
+
+[[ports]]
+localPort = 5173
+externalPort = 3000
+exposeLocalhost = true
+
+[[ports]]
+localPort = 8000
+externalPort = 80
+
+[deployment]
+run = ["sh", "-c", "npx http-server . -p 8000"]
